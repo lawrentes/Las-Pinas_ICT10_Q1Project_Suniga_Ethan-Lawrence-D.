@@ -1,4 +1,4 @@
-from browser import document # type: ignore
+from pyscript import document # type: ignore
 
 def SKU_generator(e):
     
@@ -12,7 +12,7 @@ def SKU_generator(e):
     prod_code = type[:4].upper()
     qty = str(color)
     
-    sku = brand[:3].upper() = "-" + prod_code + "-" + qty
+    sku = brand[:3].upper() + "-" + prod_code + "-" + qty
     document.getElementById('output-zone').innerHTML = f"<strong>SKU:</strong>&nbsp;{sku}"
     
     document["SKU_generator"].bind("click", SKU_generator)

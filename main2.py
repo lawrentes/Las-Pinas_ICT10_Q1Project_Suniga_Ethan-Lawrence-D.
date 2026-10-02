@@ -1,5 +1,5 @@
 
-from browser import document # type: ignore
+from pyscript import document # type: ignore
 
 def create_order(e):
     prod1 = document.getElementById("item1")
